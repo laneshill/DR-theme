@@ -470,7 +470,7 @@ div.menu li {
 #main {
 	clear: both;
 	overflow: hidden;
-	padding: 40px 0 0 0;
+	padding: 40px 0 300px 0;
 }
 #content {
 	margin-bottom: 36px;
