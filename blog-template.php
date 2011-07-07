@@ -9,6 +9,8 @@ Template Name: Blog
 get_header(); ?>
 </head>
 <body id="blog-eatit" class="<?php if(function_exists('body_class')) body_class();  ?>">
+<h2><center>What's New</center></h2>
+<hr>
 <div id="page" class="page">
 <div id="pagewidth" class="section narrowcolumn index block">
   <?php //include (TEMPLATEPATH . '/includes/header.php');?>
