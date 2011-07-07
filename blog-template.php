@@ -19,6 +19,8 @@ get_header(); ?>
  <?php $blog_query = new WP_Query('posts_per_page=20&category=news&orderby=date&order=DEC'); ?>
  <?php if (have_posts()) : ?>
     <?php while ($blog_query->have_posts()) : $blog_query->the_post(); ?>
+    <h3><?php the_title(); ?></h3>
+    <h4>Posted on <?php the_time('m/d/Y') ?></h4>
     <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
       <?php //include (TEMPLATEPATH . '/includes/post/postheader.php');?>
       <div class="entry section">
