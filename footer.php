@@ -13,14 +13,20 @@
 	</div><!-- #main -->
 
 	<div id="footer" role="contentinfo">
-		<div id="footer-top"></div>
+		<div id="footer-top">
+		</div><!-- #footer-top -->
 		<div id="footer-bottom">
-			<div id="site-info">
-				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<?php bloginfo( 'name' ); ?>
-				</a>
-			</div><!-- #site-info -->
-		</div><!-- #colophon -->
+			<div id="copyright">
+				&copy;Copyright <?php echo date("Y"); ?> Darkroom Software, LLC. All Rights Reserved.
+			</div><!-- #copyright -->
+			<div id="footer-buttons">
+				<ul>
+					<li>Buy</li>
+					<li>Try</li>
+					<li>Contact Us</li>				
+				</ul>
+			</div><!-- #footer-buttons -->
+		</div><!-- #footer-bottom -->
 	</div><!-- #footer -->
 
 </div><!-- #wrapper -->
