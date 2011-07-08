@@ -16,19 +16,22 @@
 		<div id="footer-top">
 		</div><!-- #footer-top -->
 		<div id="footer-bottom">
-			<div id="copyright">
-				&copy;Copyright <?php echo date("Y"); ?> Darkroom Software, LLC. All Rights Reserved.
-			</div><!-- #copyright -->
-			<div id="footer-buttons">
-				<ul>
-					<li>Buy</li>
-					<li>Try</li>
-					<li>Contact Us</li>				
-				</ul>
-			</div><!-- #footer-buttons -->
+			<div id="footer-bottom-inner">
+				<div id="copyright">
+					&copy;Copyright <?php echo date("Y"); ?> Darkroom Software, LLC. All Rights Reserved.
+				</div><!-- #copyright -->
+				<div id="footer-buttons">
+					<ul>
+						<li>Buy</li>
+						<li>Try</li>
+						<li>Contact Us</li>				
+					</ul>
+				</div><!-- #footer-buttons -->			
+			</div><!-- #footer-bottom-inner -->
 		</div><!-- #footer-bottom -->
 	</div><!-- #footer -->
 
+</div><!-- #wrapper-inner -->
 </div><!-- #wrapper -->
 
 <?php

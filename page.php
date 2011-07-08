@@ -17,6 +17,36 @@ get_header(); ?>
 		<div id="container">
 			<div id="content" role="main">
 
+
+<?php /* Creates a menu for pages beneath the level of the current page */
+	if (is_page() and ($notfound != '1')) {
+		$current_page = $post->ID;
+
+		while($current_page) {
+			$page_query = $wpdb->get_row("SELECT ID, post_title, post_status, post_parent FROM $wpdb->posts WHERE ID = '$current_page'");
+			
+			$current_page = $page_query->post_parent;
+		}
+
+		$parent_id = $page_query->ID;
+
+		$parent_title = $page_query->post_title;
+
+		if ($wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_parent = '$parent_id' AND post_status != 'attachment'")) { ?>
+			<div class="sb-pagemenu">
+				<h2><?php echo $parent_title; ?> Subpages</h2>
+				<ul>
+					<?php wp_list_pages('sort_column=menu_order&title_li=&child_of='. $parent_id); ?>
+				</ul>
+
+				<?php if ($parent_id != $post->ID) { ?>
+					<a href="<?php echo get_permalink($parent_id); ?>">Back to <?php echo $parent_title; ?></a>
+				<?php } ?>
+			</div>
+<?php } } ?>
+
+
+
 			<?php
 			/* Run the loop to output the page.
 			 * If you want to overload this in a child theme then include a file

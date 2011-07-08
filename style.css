@@ -210,7 +210,7 @@ input,
 textarea,
 .page-title span,
 .pingback a.url {
-	font-family: Georgia, "Bitstream Charter", serif;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 h3#comments-title,
 h3#reply-title,
@@ -261,12 +261,18 @@ div.menu,
 #main,
 #wrapper {
 	margin: 0 auto;
-	width: 940px;
+	width: 980px;
 }
 #wrapper {
+ 
+}
+#wrapper-inner {
 	background: #fff;
 	margin-top: 20px;
 	padding: 0 20px;
+	-webkit-box-shadow: 0px 0px 5px 5px #000000;
+	-moz-box-shadow: 0px 0px 5px 5px #000000;
+	box-shadow: 0px 0px 5px 5px #000000;
 }
 
 /* Begin Overlapping Sticky Footer! */
@@ -286,7 +292,7 @@ div.menu,
 	background: #000000;
 	margin: 0 auto;
 	height: 15px;
-	width: 940px;
+	width: 980px;
 }
 
 #footer-bottom {
@@ -296,15 +302,22 @@ div.menu,
 	width: 100%;
 }
 
+#footer-bottom-inner {
+	margin: 0 auto;
+	width: 980px;
+}
+
 #copyright {
 	float: left;
-	font-size: 8px;
-	width: 50%;
+	font-size: 10px;
+	padding: 0 0 0 25px;
+	width: 465px;
 }
 
 #footer-buttons {
 	float: left;
-	width: 50%;
+	padding: 0 0 0 50px;
+	width: 440px;
 }
 
 #footer-buttons ul {
@@ -314,6 +327,7 @@ div.menu,
 
 #footer-buttons ul li {
 	float: left;
+	margin: 0 10px 0 0;
 }
 
 /* End Overlapping sticky Footer! */
@@ -480,10 +494,11 @@ a:hover {
 -------------------------------------------------------------- */
 
 #header {
+	/*overflow: hidden;*/
 	padding: 30px 0 0 0;
 }
 #site-title {
-	float: left;
+	/*float: left;*/
 	font-size: 30px;
 	line-height: 36px;
 	margin: 0 0 18px 0;
@@ -495,8 +510,8 @@ a:hover {
 	text-decoration: none;
 }
 #site-description {
-	clear: right;
-	float: right;
+	/*clear: right;
+	float: right;*/
 	font-style: italic;
 	margin: 15px 0 18px 0;
 	width: 220px;
@@ -510,17 +525,9 @@ a:hover {
 	float: left;
 }
 
-
 /* =Menu
 -------------------------------------------------------------- */
 
-#access {
-	background: #000;
-	display: block;
-	float: left;
-	margin: 0 auto;
-	width: 940px;
-}
 #access .menu-header,
 div.menu {
 	font-size: 13px;
@@ -591,7 +598,6 @@ div.menu li {
 * html #access ul li a:hover {
 	color: #fff;
 }
-
 
 /* =Content
 -------------------------------------------------------------- */
