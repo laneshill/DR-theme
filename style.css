@@ -685,9 +685,6 @@ a:hover {
 	margin: 0 0 20px 0;
 }
 
-.entry-title {
-	border-bottom: 1px solid #cccccc;
-
 #content table {
 	border: 1px solid #e7e7e7;
 	margin: 0 -1px 24px 0;
@@ -743,22 +740,17 @@ a:hover {
 .page-title a:hover {
 	color: #ff4b33;
 }
+
 #content .entry-title {
-	color: #000;
-	font-size: 21px;
+	border-bottom: 1px solid #cccccc;
+	color: #ff0000;
+	font-size: 30px;
 	font-weight: bold;
 	line-height: 1.3em;
 	margin-bottom: 0;
+	text-align: center;
 }
-.entry-title a:link,
-.entry-title a:visited {
-	color: #000;
-	text-decoration: none;
-}
-.entry-title a:active,
-.entry-title a:hover {
-	color: #ff4b33;
-}
+
 .entry-meta {
 	color: #888;
 	font-size: 12px;
