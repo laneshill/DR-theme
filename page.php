@@ -17,9 +17,8 @@ get_header(); ?>
 		<div id="container">
 			<div id="content" role="main">
 
-
 <?php /* Creates a menu for pages beneath the level of the current page */
-	if (is_page() and ($notfound != '1')) {
+	if (is_page() and ($notfound != '1') and !is_front_page()) {
 		$current_page = $post->ID;
 
 		while($current_page) {
@@ -33,15 +32,12 @@ get_header(); ?>
 		$parent_title = $page_query->post_title;
 
 		if ($wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_parent = '$parent_id' AND post_status != 'attachment'")) { ?>
-			<div class="subpage-menu">
+			<div id="subpage-menu">
 				<ul>
 					<?php wp_list_pages('depth=1&sort_column=menu_order&title_li=&child_of='. $parent_id); ?>
 				</ul>
 			</div>
-		<h2 class="section-title"><?php echo $parent_title; ?></h2>
 <?php } } ?>
-
-
 
 			<?php
 			/* Run the loop to output the page.
