@@ -294,8 +294,12 @@ code {
 }
 
 #footer-buttons ul li {
+	background-image: url('images/footer-triangle.png');
+	background-position: center top;
+	background-repeat: no-repeat;
 	float: left;
 	margin: 0 10px 0 0;
+	padding: 13px 0 0 0;
 }
 
 /* End Overlapping sticky Footer! */
