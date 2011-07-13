@@ -278,8 +278,8 @@ code {
 #copyright {
 	float: left;
 	font-size: 10px;
-	padding: 0 0 0 25px;
-	width: 465px;
+	padding: 18px 0 0 75px;
+	width: 390px;
 }
 
 #footer-buttons {
@@ -496,14 +496,6 @@ a:hover {
 	margin: -22px 24px 0 0;
 }
 
-/* This is the custom header image */
-#branding img {
-	border-top: 4px solid #000;
-	border-bottom: 1px solid #000;
-	display: block;
-	float: left;
-}
-
 /* Begin Main Navigation Menu */
 
 #main-nav .menu,
@@ -512,7 +504,7 @@ a:hover {
 }
 
 #main-nav {
-	height: 45px;
+	height: 37px;
 	margin: 0 auto;
 	width: 980px;
 }
@@ -531,7 +523,7 @@ a:hover {
 #main-nav ul{ display: inline-block; }
 
 #main-nav li {
-	border-right: 2px solid #ffffff;
+	border-right: 1px solid #ffffff;
 	display: inline;
 	float: left;
 	height: 28px;
@@ -541,7 +533,7 @@ a:hover {
 }
 
 .first-menu-item {
-	border-left: 2px solid #ffffff;
+	border-left: 1px solid #ffffff;
 }
 
 #main-nav a {
@@ -577,7 +569,7 @@ a:hover {
 }
 
 #main-nav ul ul a {
-	background: #ed1849;
+	background: #545355;
 	color: #ffffff;
 	line-height: 1em;
 	padding: 10px;
@@ -618,19 +610,19 @@ a:hover {
 
 #facebook-link a {
 	background: transparent !important;
-	left: 900px;
+	left: 890px;
 	position: relative;
-	top: -28px;
-	width: 15px;
+	top: -22px;
+	width: 18px;
 	z-index: 10;
 }
 
 #twitter-link a {
 	background: transparent !important;
-	left: 921px;
+	left: 915px;
 	position: relative;
-	top: -56px;
-	width: 15px;
+	top: -50px;
+	width: 18px;
 	z-index: 10;
 }
 
@@ -1534,6 +1526,9 @@ code {
 	#site-info,
 	#site-generator {
 		float: none;
+		width: auto;
+	}
+	#colophon {
 		width: auto;
 	}
 	img#wpstats {
