@@ -61,10 +61,12 @@
 	<div id="header">
 		<div id="header-info">	
 			<h1 id="site-title">
-				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">DARKROOM IMAGE GOES HERE</a>
+				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/images/darkroom-logo.png" /></a>
 			</h1>
 			<div id="version-links">
-				LINKS TO VESIONS GOES HERE
+				<a href="<?php echo home_url( '/' ); ?>buy/buy-direct/pro-edition" title="Pro Edition"><img src="<?php bloginfo('template_directory'); ?>/images/product-p.png" /></a>
+				<a href="<?php echo home_url( '/' ); ?>buy/buy-direct/assembly-edition" title="Assembly Edition"><img src="<?php bloginfo('template_directory'); ?>/images/product-a.png" /></a>
+				<a href="<?php echo home_url( '/' ); ?>buy/buy-direct/core-edition" title="Core Edition"><img src="<?php bloginfo('template_directory'); ?>/images/product-c.png" /></a>
 			</div>
 			<div id="site-description">
 				<?php bloginfo( 'description' ); ?>
@@ -73,6 +75,15 @@
 		<div id="main-nav" role="navigation">
 			<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
 			<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+
+
+			<div id="facebook-link">
+				<a href="http://facebook.com/" title="Like us on Facebook!"><img src="<?php bloginfo('template_directory'); ?>/images/facebook-icon.png" /></a>
+			</div>
+			<div id="twitter-link">
+				<a href="http://twitter.com/" title="Follow us on Twitter!"><img src="<?php bloginfo('template_directory'); ?>/images/twitter-icon.png" /></a>
+			</div>
+
 		</div><!-- #main-nav -->
 	</div><!-- #header -->
 	<div id="wrapper-inner">
