@@ -296,10 +296,10 @@ code {
 	background-position: center top;
 	background-repeat: no-repeat;
 	float: left;
-	margin: 0 10px 0 0;
+	margin: 0 8px 0 0;
 	padding: 13px 0 0 0;
 	text-align: center;
-	width: 70px;
+	width: 56px;
 }
 
 #footer-buttons a, #footer-buttons a:focus, #footer-buttons a:hover, #footer-buttons a:active, #footer-buttons a:visited {
@@ -309,6 +309,14 @@ code {
 
 #footer-buttons a:focus, #footer-buttons a:hover {
 	text-decoration: underline;
+}
+
+#try-button {
+	margin-right: 44px !important;
+}
+
+#contact-button {
+	width: 70px !important;
 }
 
 /* End Overlapping sticky Footer! */
