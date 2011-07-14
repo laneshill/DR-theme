@@ -22,9 +22,22 @@
 				</div><!-- #copyright -->
 				<div id="footer-buttons">
 					<ul>
-						<li>Buy</li>
-						<li>Try</li>
-						<li>Contact Us</li>				
+						<li id="buy-button">
+							<a href="<?php echo home_url( '/' ); ?>buy/buy-direct">
+								<!-- <img src="<?php bloginfo('template_directory'); ?>/images/buy-button.png" onmouseover="this.src='<?php bloginfo("template_directory"); ?>/images/buy-button-hover.png'" onmouseout="this.src='<?php bloginfo("template_directory"); ?>/images/buy-button.png'"> -->
+								<img src="<?php bloginfo('template_directory'); ?>/images/buy-button.png" />
+							</a>
+						</li>
+						<li id="try-button">
+							<a href="<?php echo home_url( '/' ); ?>learn/try-for-free">
+								<img src="<?php bloginfo('template_directory'); ?>/images/try-button.png" />
+							</a>
+						</li>
+						<li id="contact-button">
+							<a href="<?php echo home_url( '/' ); ?>contact-us">
+								Contact Us
+							</a>
+						</li>				
 					</ul>
 				</div><!-- #footer-buttons -->			
 			</div><!-- #footer-bottom-inner -->

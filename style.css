@@ -213,10 +213,10 @@ h3#reply-title,
 .reply,
 .widget-title,
 .wp-caption-text {
-	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 input[type=submit] {
-	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 pre {
 	font-family: "Courier 10 Pitch", Courier, monospace;
@@ -233,7 +233,7 @@ code {
 
 
 #wrapper-inner {
-	background: #fff;
+	background: #ffffff;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0 20px;
@@ -244,15 +244,13 @@ code {
 }
 
 /* Begin Overlapping Sticky Footer! */
+
 #footer {
-	/*background-color: #ff0000;
-	background-color: rgba(1.0, 0, 0, 0.7);*/
 	bottom: 0;
 	left: 0;
 	position: fixed;
 	width: 100%;
 	z-index: 700;
-	/*padding: 20px 0 15px 10px;*/
 	overflow: hidden;
 }
 
@@ -279,13 +277,13 @@ code {
 	float: left;
 	font-size: 10px;
 	padding: 18px 0 0 75px;
-	width: 390px;
+	width: 455px;
 }
 
 #footer-buttons {
 	float: left;
 	padding: 0 0 0 50px;
-	width: 440px;
+	width: 375px;
 }
 
 #footer-buttons ul {
@@ -300,6 +298,17 @@ code {
 	float: left;
 	margin: 0 10px 0 0;
 	padding: 13px 0 0 0;
+	text-align: center;
+	width: 70px;
+}
+
+#footer-buttons a, #footer-buttons a:focus, #footer-buttons a:hover, #footer-buttons a:active, #footer-buttons a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#footer-buttons a:focus, #footer-buttons a:hover {
+	text-decoration: underline;
 }
 
 /* End Overlapping sticky Footer! */
@@ -504,7 +513,9 @@ a:hover {
 
 #main-nav .menu,
 #main-nav div.menu ul {
-	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	font-size: 13px;
+	text-decoration: none;
+	text-transform: lowercase;	
 }
 
 #main-nav {
@@ -591,7 +602,6 @@ a:hover {
 	background: #ed1849 url('images/main-menu-background-hover.png') repeat-x;
 }
 
-
 #main-nav ul li:hover > ul {
 	display: block;
 }
@@ -633,8 +643,8 @@ a:hover {
 /* Begin Subpage Menu */
 
 #subpage-menu ul {
-	list-style: 0;
-	marin: 0;
+	list-style: none;
+	margin: 0;
 	padding: 0;
 	text-align: center;
 }
@@ -644,7 +654,8 @@ a:hover {
 }
 
 #subpage-menu ul li a {
-	color: #cdcdcd;
+	color: #9d9d9d;
+	font-size: 13px;
 	padding: 5px 7px;
 	text-decoration: none;
 	text-transform: lowercase;
