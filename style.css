@@ -153,6 +153,14 @@ input[type="file"] > intput[type="button"]:focus {
 
 /* End HTML5 ✰ Boilerplate CSS Reset */
 
+/* Begin Global Links */
+
+a, a:focus, a:active, a:visited {
+	color: #ed1849;
+}
+
+/* End Global Links */
+
 /* =Layout
 -------------------------------------------------------------- */
 
@@ -507,7 +515,12 @@ a:hover {
 
 #version-links {
 	float: right;
-	margin: 0 46px 0 0;
+	margin: 0 29px 0 0;
+	width: 150px;
+}
+
+#version-links a {
+display: inline;
 }
 
 #site-description {
@@ -652,7 +665,7 @@ a:hover {
 
 #subpage-menu ul {
 	list-style: none;
-	margin: 0;
+	margin: 0 !important;
 	padding: 0;
 	text-align: center;
 }
@@ -789,8 +802,7 @@ a:hover {
 }
 
 #content .entry-title {
-	border-bottom: 1px solid #cccccc;
-	color: #ff0000;
+	color: #ed1849;
 	font-size: 30px;
 	font-weight: bold;
 	line-height: 1.3em;
