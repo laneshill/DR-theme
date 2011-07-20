@@ -37,8 +37,8 @@ get_header(); ?>
 					<?php wp_list_pages('depth=1&sort_column=menu_order&title_li=&child_of='. $parent_id); ?>
 				</ul>
 			</div>
+			<div id="horizontal-shadow"><img src="<?php bloginfo('template_directory'); ?>/images/horizontal-shadow.png" /></div>
 <?php } } ?>
-
 			<?php
 			/* Run the loop to output the page.
 			 * If you want to overload this in a child theme then include a file

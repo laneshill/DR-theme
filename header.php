@@ -64,9 +64,9 @@
 				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/images/darkroom-logo.png" /></a>
 			</h1>
 			<div id="version-links">
+				<a href="<?php echo home_url( '/' ); ?>buy/buy-direct/core-edition" title="Core Edition"><img src="<?php bloginfo('template_directory'); ?>/images/product-c.png" /></a>
 				<a href="<?php echo home_url( '/' ); ?>buy/buy-direct/pro-edition" title="Pro Edition"><img src="<?php bloginfo('template_directory'); ?>/images/product-p.png" /></a>
 				<a href="<?php echo home_url( '/' ); ?>buy/buy-direct/assembly-edition" title="Assembly Edition"><img src="<?php bloginfo('template_directory'); ?>/images/product-a.png" /></a>
-				<a href="<?php echo home_url( '/' ); ?>buy/buy-direct/core-edition" title="Core Edition"><img src="<?php bloginfo('template_directory'); ?>/images/product-c.png" /></a>
 			</div>
 			<div id="site-description">
 				<?php bloginfo( 'description' ); ?>
