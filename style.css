@@ -153,14 +153,6 @@ input[type="file"] > intput[type="button"]:focus {
 
 /* End HTML5 ✰ Boilerplate CSS Reset */
 
-/* Begin Global Links */
-
-a, a:focus, a:active, a:visited {
-	color: #ed1849;
-}
-
-/* End Global Links */
-
 /* =Layout
 -------------------------------------------------------------- */
 
@@ -469,12 +461,12 @@ textarea {
 	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
 	padding: 2px;
 }
-a:link {
-	color: #0066cc;
+
+
+a, a:focus, a:visited {
+	color: #ed1849;
 }
-a:visited {
-	color: #743399;
-}
+
 a:active,
 a:hover {
 	color: #ff4b33;
@@ -1582,4 +1574,8 @@ code {
 	.home .sticky {
 		border: none;
 	}
+}
+
+.ui-widget-content ul {
+	list-style-image: url('images/list-bullet.png') !important;
 }
