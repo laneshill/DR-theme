@@ -1579,3 +1579,7 @@ code {
 .ui-widget-content ul {
 	list-style-image: url('images/list-bullet.png') !important;
 }
+
+h2.post-title {
+	text-align: left !important;
+}
